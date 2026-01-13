@@ -2,53 +2,37 @@
 
 SNP-free RNA editing Identification Toolkit (SPRINT)
 
-SPRINT is designed for detecting RNA editing sites from RNA-seq data
+SPRINT-py3 (Python 3 Version) with Parallel Identification of SNVs and RESs Integrated.
 
 # RES (dbRES) & Repeat Region (dbREP)
 
 https://sourceforge.net/projects/sprintpy/files/dbRES/
 
-# News
-
-Dec. 2024, users can directly use the podman (docker) image of sprint. Demo scripts are in "/home/sprint". Download podman image (434m with demo fastq): https://pan.baidu.com/s/10xScHRKq1IkeIyPnsVeCyA?pwd=jump
-
-
-Jun. 2019, new feature (>=0.1.8) is only on Github, please do not use "pip install sprint" to install the latest SPRINT.
-
-Nov. 2018, 0.1.8 - "annotate" updated
-
-Feb. 2018, 0.1.7 - first version on github
-
 # Citation:
 Feng Zhang, Yulan Lu, Sijia Yan, Qinghe Xing, Weidong Tian; SPRINT: an SNP-free toolkit for identifying RNA editing sites, Bioinformatics, Volume 33, Issue 22, 15 November 2017, Pages 3538–3548, https://doi.org/10.1093/bioinformatics/btx473
 
 # Requirement:
-# SAMTOOLS == 1.2 & BWA == 0.7.12
-# Unix & Python2.7
+# SAMTOOLS == 1.21 & BWA == 0.7.19
+# Unix & Python3.9
 # Do not use .GZ files. Please "gunzip" the ".fastq.gz" files.
 
 # Installation:
-
-Users can directly use the podman (docker) image of sprint. Demo scripts are in "/home/sprint". Download podman image (434m with demo fastq): https://pan.baidu.com/s/10xScHRKq1IkeIyPnsVeCyA?pwd=jump
-
-Directly use the binary file in https://github.com/jumphone/SPRINT/tree/master/bin, or
 
 python setup.py install
 
 # Usage:
 
-sprint prepare |  [options]  | reference_genome(.fa) | bwa_path
+sprint_prepare |  [options]  | reference_genome(.fa) | bwa_path
 
-
-
-sprint main  |  [options]  |  reference_genome(.fa) |   output_path  |  bwa_path  |  samtools_path
-
-
+sprint_main  |  [options]  |  reference_genome(.fa) |   output_path  |  bwa_path  |  samtools_path
 
 sprint_from_bam  |  [options]  |  aligned_reads(.bam)  |  reference_genome(.fa)  |  output_path  |  samtools_path
 
+sprint_main_parallel  |  [options]  |  reference_genome(.fa) |   output_path  |  bwa_path  |  samtools_path
 
-Details about "options" are in SPRINT_manual.pdf (https://github.com/jumphone/SPRINT/blob/master/SPRINT_manual.pdf)
+sprint_from_bam_parallel  |  [options]  |  aligned_reads(.bam)  |  reference_genome(.fa)  |  output_path  |  samtools_path
+
+
 
 Repeat Annotation Files are in https://sourceforge.net/projects/sprintpy/files/dbRES/, or
 
