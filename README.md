@@ -2,7 +2,7 @@
 
 SNP-free RNA editing Identification Toolkit (SPRINT)
 
-SPRINT-py3 (Python 3 Version) with Parallel Identification of SNVs and RESs Integrated.
+SPRINT-py3 (Python 3 Version) with Parallel Identification of SNVs and RESs.
 
 # RES (dbRES) & Repeat Region (dbREP)
 
