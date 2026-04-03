@@ -6,7 +6,7 @@ import sys
 import sprint
 
 
-def prepare():
+def main():
     # 移除冗余注释，保持代码整洁
     # Python3 核心修复：print 语句改为带括号的函数形式
     print('')
